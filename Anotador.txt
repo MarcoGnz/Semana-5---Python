@@ -1,0 +1,15 @@
+Ejercicios
+-Ejercicio de Uso de Variables (variables)
+-Ejercicio determinar si es mayor de Edad (uso de variables, comparadores)
+-Ejercicio Calcular la estacion del mes segun lo proporcionado(uso de if, variables)
+-Ejercicio Lanzamiento de cohete (ciclo while)
+-Ejercicio calculadora python (funciones, operadores, variables, sentencias if)
+
+Tareas
+-Gramática básica de Python factorización de Python
+-Gramática básica de Python
+-Refactorización de Python.
+
+Examenes
+-Serie de introducción a los algoritmos
+-Visión general de Python y serie de funciones

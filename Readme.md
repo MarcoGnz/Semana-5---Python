@@ -1,4 +1,4 @@
-# Curso Básico de Python para Principiantes
+# Curso Básico de Python
 ## Introducción a Python
 *¿Qué es Python?*
 
@@ -37,4 +37,167 @@ python mi_programa.py
 ```
 *Uso del intérprete interactivo*
 Puedes abrir una sesión interactiva de Python simplemente escribiendo python (o python3 en algunos sistemas) en tu terminal. Esto te permitirá escribir y ejecutar código Python línea por línea.
+# Ejercicios
+## 1. Uso de Variables
+Las variables son contenedores para almacenar valores. Puedes crear variables en Python simplemente asignándoles un valor con el operador =.
+```python
+# Crear variables
+nombre = "Juan"
+edad = 25
+numero = 42
 
+# Operaciones con variables
+suma = edad + numero
+print(f"La suma de {edad} y {numero} es {suma}")
+
+```
+## 2. Determinar si es Mayor de Edad
+Solicita la edad del usuario y utiliza un comparador para verificar si es mayor de edad.
+```python
+edad = int(input("Ingresa tu edad: "))
+if edad >= 18:
+    print("Eres mayor de edad.")
+else:
+    print("Eres menor de edad.")
+
+```
+## 3. Calcular la Estación del Mes
+Solicita al usuario que ingrese un número de mes (1 a 12) y determina la estación del año correspondiente.
+```python
+mes = int(input("Ingresa el número del mes (1-12): "))
+
+if mes in [12, 1, 2]:
+    print("Es invierno.")
+elif mes in [3, 4, 5]:
+    print("Es primavera.")
+elif mes in [6, 7, 8]:
+    print("Es verano.")
+elif mes in [9, 10, 11]:
+    print("Es otoño.")
+else:
+    print("Mes no válido.")
+
+```
+## 4. Lanzamiento de Cohete
+Implementa un ciclo while que cuente desde 10 hasta 1 y muestra un mensaje de lanzamiento.
+```python
+cuenta_regresiva = 10
+while cuenta_regresiva > 0:
+    print(cuenta_regresiva)
+    cuenta_regresiva -= 1
+print("¡Lanzamiento!")
+
+```
+## 5. Calculadora Python
+Crea funciones para realizar operaciones matemáticas básicas y utiliza sentencias if para seleccionar la operación deseada.
+```python
+def suma(a, b):
+    return a + b
+
+def resta(a, b):
+    return a - b
+
+def multiplicacion(a, b):
+    return a * b
+
+def division(a, b):
+    if b == 0:
+        return "Error: División por cero."
+    return a / b
+
+operacion = input("Elige una operación (suma, resta, multiplicacion, division): ").lower()
+num1 = float(input("Ingresa el primer número: "))
+num2 = float(input("Ingresa el segundo número: "))
+
+if operacion == "suma":
+    print(f"El resultado es: {suma(num1, num2)}")
+elif operacion == "resta":
+    print(f"El resultado es: {resta(num1, num2)}")
+elif operacion == "multiplicacion":
+    print(f"El resultado es: {multiplicacion(num1, num2)}")
+elif operacion == "division":
+    print(f"El resultado es: {division(num1, num2)}")
+else:
+    print("Operación no válida.")
+
+```
+# Tareas
+## 1. Gramática Básica de Python
+Familiarízate con la sintaxis básica de Python:
+
+- **Indentación**: Python usa la indentación para definir bloques de código.
+- **Comentarios**: Los comentarios se añaden con #.
+- **Variables y tipos de datos**: Python tiene varios tipos de datos integrados, como enteros (int), flotantes (float), cadenas (str), listas (list), etc.
+```python
+# Este es un comentario
+x = 10  # Variable entera
+y = 2.5  # Variable flotante
+nombre = "Ana"  # Variable de cadena
+
+print(x, y, nombre)  # Imprime las variables
+```
+## 2. Factorización de Python
+Divide tu código en funciones reutilizables para mejorar la modularidad y organización.
+```python
+def saludar(nombre):
+    return f"Hola, {nombre}!"
+
+nombre_usuario = input("Ingresa tu nombre: ")
+print(saludar(nombre_usuario))
+```
+## 3. Refactorización de Python
+Revisa tu código existente buscando oportunidades para mejorarlo en términos de simplicidad, eficiencia y legibilidad.
+
+**Ejemplo**
+Antes de refactorización:
+```python
+x = 10
+y = 20
+z = 30
+promedio = (x + y + z) / 3
+print("El promedio es", promedio)
+```
+Después de refactorización:
+```python
+def calcular_promedio(*numeros):
+    return sum(numeros) / len(numeros)
+
+print(f"El promedio es {calcular_promedio(10, 20, 30)}")
+```
+# Exámenes
+## 1. Serie de Introducción a los Algoritmos
+Estudia conceptos básicos como bucles, condicionales y estructuras de datos.
+**Ejemplo de bucle**
+```python
+for i in range(5):
+    print(i)
+```
+**Ejemplo de condicional**
+```python
+numero = 10
+if numero > 5:
+    print("El número es mayor que 5.")
+else:
+    print("El número es 5 o menor.")
+```
+## 2. Visión General de Python y Serie de Funciones
+Profundiza en características clave como listas, diccionarios y funciones.
+
+**Ejemplo con listas**
+```python
+numeros = [1, 2, 3, 4, 5]
+for numero in numeros:
+    print(numero)
+```
+**Ejemplo con diccionarios**
+```python
+persona = {"nombre": "Ana", "edad": 25, "ciudad": "Madrid"}
+print(persona["nombre"])
+```
+**Ejemplo de función**
+```python
+def sumar(a, b):
+    return a + b
+
+print(sumar(5, 3))
+```
