@@ -1,7 +1,9 @@
 # Curso Básico de Python
-## Introducción a Python
-*¿Qué es Python?*
 
+## 1. Introducción a Python
+## Objetivo
+Aplicar una instalacion correcta del lenguaje Python a traves de 5 sencillos pasos pasos. <br>
+## *¿Qué es Python?*
 Python es un lenguaje de programación interpretado, de alto nivel y propósito general. Fue creado por Guido van Rossum y lanzado por primera vez en 1991. Python es conocido por su sintaxis simple y fácil de leer, lo que lo hace ideal para principiantes, pero también es poderoso y ampliamente utilizado en la industria.
 
 ## Instalación de Python
@@ -37,6 +39,23 @@ python mi_programa.py
 ```
 *Uso del intérprete interactivo*
 Puedes abrir una sesión interactiva de Python simplemente escribiendo python (o python3 en algunos sistemas) en tu terminal. Esto te permitirá escribir y ejecutar código Python línea por línea.
+
+## 2. Uso de Variables
+## Objetivo
+Diferenciar entre distintos tipos de datos a traves de contenido teórico y ejercicios prácticos.
+
+## 3. Uso de Variables
+## Objetivo
+Determinar el uso correcto de sentencias de control mediante situaciones de la vida real aplicados a código
+
+## 4. Ciclos en Python
+## Objetivo
+Identificar la sintaxis y usos de los ciclos en el lenguaje Python mediante ejercicios prácticos
+
+## 5. Funciones en Python
+## Objetivo
+Determinar el uso y creación de funciones en Python, incluyendo parámetros, argumentos y el concepto de retorno de valores, a través de ejemplos prácticos y teóricos.
+
 # Ejercicios
 ## 1. Uso de Variables
 Las variables son contenedores para almacenar valores. Puedes crear variables en Python simplemente asignándoles un valor con el operador =.
